@@ -31,7 +31,7 @@ input{
     background-color: #d7db9d;
     color: #fff;
     padding: 9px;
-    margin-left: -30px;
+    margin-left: -32px;
 
 }
 .cart{
@@ -44,5 +44,69 @@ input{
 .cart i{
  padding: 10px 50px 0px 0px;
    
+}
+/* responsivenese for smal screens */
+
+@media(max-width:100px){
+    nav{
+        height: 80px;
+       
+
+    }
+    input{
+        height: 30px;
+        width: 250px;
+        
+    }
+    #khan{
+        height: 100px;
+        width: 100px;
+    }
+    #search{
+        margin-left: -22px;
+        padding: 7px;
+    }
+    .cart{
+        padding: 0 20px;
+        width: 20px;
+        height: 20px;
+
+    }
+    .cart i{
+        padding-left: 7px;
+    }
+}
+
+/*responsiveness for Desktop or large screens*/
+@media(max-width:400px){
+    nav{
+        height: 60px;
+    }
+    input{
+        height: 25px;
+        width: 170px;
+        
+    }
+    #khan{
+        height: 50px;
+        width: 60px;
+    }
+    #search{
+        background-color: transparent;
+        color: #000;
+        margin-left:-28px;
+        padding-top: 2px;
+    }
+    .cart{
+        padding: 0 15px;
+        width: 15px;
+        height: 15px;
+
+
+    }
+    .cart i{
+        padding-left: 4px;
+    }
+
 }
 
