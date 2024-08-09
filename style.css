@@ -45,9 +45,140 @@ input{
  padding: 10px 50px 0px 0px;
    
 }
-/* responsivenese for smal screens */
+.home{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    margin: 30px 0;
+    justify-content: space-evenly;
+    
+}
+.category{
+    
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 15px;
+}
+.category h2{
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    background-color: #6161d6;
+    color: #fff;
+    text-transform: capitalize;
 
-@media(max-width:100px){
+}
+.category li{
+    list-style-type: none;
+    padding: 8px 0;
+    padding-left: 20px;
+    
+
+}
+.category li a{
+    text-decoration: none;
+    color: #000;
+
+}
+.laptop{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.438)), url(/images/bgi1.avif);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+
+}
+.laptop h2{
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+#heading{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.mobiles{
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% ;
+    justify-content: space-around;
+}
+.mobiles div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: 1px solid gainsboro;
+    text-align: center;
+    margin: 10px 0;
+}
+.mobiles div img{
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 10px;
+}
+.mobiles span p{
+    padding: 3px;
+    font-size: small;
+}
+.mobiles span p:first-child{
+    font-weight: bold;
+}
+#mobile_heading{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.for_mobiles{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22% ;
+    justify-content: space-around;
+}
+.for_mobiles div{
+    background-color: #fafafa;
+    border: 1px solid gainsboro;
+    text-align: center;
+    
+}
+.for_mobiles div img{
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 15px;
+
+}
+.notify{
+     background-color:#00000078;
+     color: #fff;
+     width: 90px;
+     height: 40px;
+     padding:0;
+     margin-top: 10px;
+     box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 10px;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+.notify p{
+    padding-top: 10px;
+    font-size: bold;
+    color: #000;
+    
+}
+.for_mobiles h4{
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+/* responsivenese for larege disktop */
+
+@media(max-width:1000px){
     nav{
         height: 80px;
        
@@ -67,17 +198,63 @@ input{
         padding: 7px;
     }
     .cart{
-        padding: 0 20px;
+        padding-right: 30px;
+        padding-left: 30px;
         width: 20px;
         height: 20px;
 
     }
     .cart i{
-        padding-left: 7px;
+        padding-left: 10px;
+    }
+    .laptop h2{
+        font-size: 15px;
+
+    }
+    .laptop img{
+        width: 60%;
+    }
+    #heading{
+        margin-top: 80px;
+        margin-bottom: 10px;
+        padding:10px 20px;
+    }
+    .mobiles{
+        grid-template-columns: 30% 30% 30%;
+        justify-content:space-around;
+    }
+    .mobiles div{
+        margin: 10px 0;
+        height: 95%;
+        border: 1px solid #fafafa;
+
+    }
+    .mobiles div img{
+        height: 80%;
+        width: 90%;
+    }
+    .mobiles span p{
+        font-size:medium;
+    }
+    .for_mobiles{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: space-around;
+    }
+    .for_mobiles div{
+        margin-bottom: 10px;
+
+    }
+    .for_mobiles div img{
+        height: 170px;
+        width: 180px;
+        border-radius: 5px;
+        margin: 10px;
+        margin-bottom: 5px;
+        background-color: transparent;
     }
 }
-
-/*responsiveness for Desktop or large screens*/
+/*responsiveness for mobile screen*/
 @media(max-width:400px){
     nav{
         height: 60px;
@@ -107,6 +284,63 @@ input{
     .cart i{
         padding-left: 4px;
     }
+    
+    .home{
+        margin: 20px 0;
+    }
+    .category{
+        padding: 5px;
+        height: 90px;
+    }
+    .category h2{
+        font-size: 7px;
+        padding: 2px;
+        margin-top: 2px;
+    }
+    .category li{
+        padding: 2px 0;
+        font-size: 1vh;
 
+    }
+    .laptop{
+        background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/bgi1.avif);
+        background-size: cover;
+       
+    }
+    .laptop h2{
+        font-size: 10px;
+    }
+    .laptop{
+        width: 40%;
+    }
+    #heading{
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding:0 20px;
+        font-size: 2.5vh;
+
+    }
+    .mobiles{
+        grid-template-columns:50% 50%;
+        justify-content: space-around;
+        
+    }
+   #mobile_heading{
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding:20px 20px;
+    font-size: 2.5vh;
+   }
+   .for_mobiles{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: space-around;
+
+   }
+   .for_mobiles .notify{
+    width: 80px;
+    height: 20px;
+   }
 }
+
 
