@@ -221,6 +221,13 @@ footer img{
     height:30px;
     padding: 10px;
 }
+.all-rights{
+    text-align: center;
+    background-color: #91b5d3;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #352f2f;
+}
 
 /* responsivenese for larege disktop */
 
@@ -446,6 +453,14 @@ footer img{
    }
    .for_watches p{
     font-size: 2vh;
+   }
+   footer{
+    margin-top: 50px;
+   }
+   footer img{
+    width: 15px;
+    height: 15px;
+    padding: 8px;
    }
 }
 
