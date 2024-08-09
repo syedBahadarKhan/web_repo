@@ -210,6 +210,17 @@ input{
     font-size: 18px;
     color:rgba(71, 71, 186, 0.804);
 }
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    background-color: #91b5d3;
+}
+footer img{
+    width:30 ;
+    height:30px;
+    padding: 10px;
+}
 
 /* responsivenese for larege disktop */
 
