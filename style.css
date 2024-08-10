@@ -80,7 +80,7 @@ input{
 
 }
 .laptop{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.438)), url(/images/bgi1.avif);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.438)), url(bgi1.avif);
     color: #fff;
     width: 100%;
     display: flex;
